@@ -7,16 +7,11 @@ a tool
 ```yaml
 git:
   - gitlab_niaoshuai:
-      name: 任帅鹏
-      email: renshuaipeng@jiaoyu361.com
+      name: [NAME]
+      email: [EMAIL]
       type: gitlab
       keyType: rsa
-      keyPath: ~/.ssh/gitlab_niaoshuai_rsa
-  - github_niaoshuai:
-      name: niaoshuai
-      email: niao.shuai123@163.com
-      keyType: ed25519
-      keyPath: ~/.ssh/github_niaoshuai_ed25519
+      keyPath: ~/.ssh/[KEY_NAME]
 ```
 ## git 相关命令
 
@@ -27,4 +22,8 @@ $ niao git init
 $ niao git validate 
 # 切换key author等 （第一次拉取到项目执行）
 $ niao git switch --key [KEY]
+# 恢复
+$ niao git backup
+# 恢复
+$ niao git restore
 ```
