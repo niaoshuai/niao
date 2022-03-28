@@ -22,7 +22,7 @@ $ niao git init
 $ niao git validate 
 # 切换key author等 （第一次拉取到项目执行）
 $ niao git switch --key [KEY]
-# 恢复
+# 备份
 $ niao git backup
 # 恢复
 $ niao git restore
